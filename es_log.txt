@@ -1,0 +1,100 @@
+May 23 23:30:46 lvl2: 	EmulationStation - v2.10.1rp, built Dec 26 2021 - 16:20:53
+May 23 23:30:46 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamenames.xml"...
+May 23 23:30:47 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamebioses.xml"...
+May 23 23:30:47 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamedevices.xml"...
+May 23 23:30:47 lvl2: 	Creating window...
+May 23 23:30:47 lvl2: 	Created window successfully.
+May 23 23:30:47 lvl2: 	GL vendor:   Broadcom
+May 23 23:30:47 lvl2: 	GL renderer: VideoCore IV HW
+May 23 23:30:47 lvl2: 	GL version:  OpenGL ES-CM 1.1
+May 23 23:30:47 lvl2: 	Checking available OpenGL extensions...
+May 23 23:30:47 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+May 23 23:30:47 lvl2: 	Added unconfigured joystick RP2040 NeoGeo Digital (GUID: 03000000010000000100000009000000, instance ID: 0, device index: 0).
+May 23 23:30:47 lvl2: 	Loading system config file /etc/emulationstation/es_systems.cfg...
+May 23 23:30:47 lvl1: 	System "amstradcpc" has no games! Ignoring it.
+May 23 23:30:47 lvl2: 	Parsing XML file "/home/pi/.emulationstation/gamelists/arcade/gamelist.xml"...
+May 23 23:30:48 lvl1: 	System "atari2600" has no games! Ignoring it.
+May 23 23:30:48 lvl1: 	System "atari5200" has no games! Ignoring it.
+May 23 23:30:48 lvl1: 	System "atari7800" has no games! Ignoring it.
+May 23 23:30:48 lvl1: 	System "atari800" has no games! Ignoring it.
+May 23 23:30:48 lvl1: 	System "atarilynx" has no games! Ignoring it.
+May 23 23:30:49 lvl1: 	System "channelf" has no games! Ignoring it.
+May 23 23:30:49 lvl1: 	System "coleco" has no games! Ignoring it.
+May 23 23:30:49 lvl1: 	System "fba" has no games! Ignoring it.
+May 23 23:30:49 lvl1: 	System "fds" has no games! Ignoring it.
+May 23 23:30:50 lvl1: 	System "gamegear" has no games! Ignoring it.
+May 23 23:30:50 lvl1: 	System "gb" has no games! Ignoring it.
+May 23 23:30:50 lvl1: 	System "gba" has no games! Ignoring it.
+May 23 23:30:50 lvl1: 	System "gbc" has no games! Ignoring it.
+May 23 23:30:50 lvl1: 	System "mame-libretro" has no games! Ignoring it.
+May 23 23:30:51 lvl1: 	System "mastersystem" has no games! Ignoring it.
+May 23 23:30:51 lvl1: 	System "megadrive" has no games! Ignoring it.
+May 23 23:30:51 lvl1: 	System "msx" has no games! Ignoring it.
+May 23 23:30:51 lvl1: 	System "n64" has no games! Ignoring it.
+May 23 23:30:51 lvl1: 	System "neogeo" has no games! Ignoring it.
+May 23 23:30:52 lvl1: 	System "nes" has no games! Ignoring it.
+May 23 23:30:52 lvl1: 	System "ngp" has no games! Ignoring it.
+May 23 23:30:52 lvl1: 	System "ngpc" has no games! Ignoring it.
+May 23 23:30:52 lvl1: 	System "pcengine" has no games! Ignoring it.
+May 23 23:30:52 lvl1: 	System "psx" has no games! Ignoring it.
+May 23 23:30:53 lvl2: 	Parsing XML file "/home/pi/.emulationstation/gamelists/retropie/gamelist.xml"...
+May 23 23:30:53 lvl1: 	System "sega32x" has no games! Ignoring it.
+May 23 23:30:53 lvl1: 	System "segacd" has no games! Ignoring it.
+May 23 23:30:53 lvl1: 	System "sg-1000" has no games! Ignoring it.
+May 23 23:30:53 lvl1: 	System "snes" has no games! Ignoring it.
+May 23 23:30:54 lvl1: 	System "vectrex" has no games! Ignoring it.
+May 23 23:30:54 lvl1: 	System "zxspectrum" has no games! Ignoring it.
+May 23 23:30:55 lvl2: 	Added unconfigured joystick RP2040 NeoGeo Digital (GUID: 03000000010000000100000009000000, instance ID: 0, device index: 0).
+May 23 23:31:06 lvl2: 	Configuring device 0 (RP2040 NeoGeo Digital).
+May 23 23:31:23 lvl2: 	  Mapping [Hat 0 up] -> Up
+May 23 23:31:25 lvl2: 	  Mapping [Hat 0 down] -> Down
+May 23 23:31:27 lvl2: 	  Mapping [Hat 0 left] -> Left
+May 23 23:31:28 lvl2: 	  Mapping [Hat 0 right] -> Right
+May 23 23:31:32 lvl2: 	  Mapping [Button 5] -> Start
+May 23 23:31:35 lvl2: 	  Mapping [Button 4] -> Select
+May 23 23:31:44 lvl2: 	  Mapping [Button 0] -> A
+May 23 23:31:46 lvl2: 	  Mapping [Button 1] -> B
+May 23 23:31:49 lvl2: 	  Mapping [Button 2] -> X
+May 23 23:31:49 lvl2: 	  Mapping [Button 3] -> Y
+May 23 23:34:00 lvl2: 	 req sound [basic.launch]
+May 23 23:34:00 lvl2: 	   (missing)
+May 23 23:34:01 lvl2: 	Attempting to launch game...
+May 23 23:34:01 lvl2: 		/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ arcade /home/pi/RetroPie/roms/arcade/pacman.zip
+May 23 23:34:12 lvl2: 	Creating window...
+May 23 23:34:12 lvl2: 	Created window successfully.
+May 23 23:34:12 lvl2: 	GL vendor:   Broadcom
+May 23 23:34:12 lvl2: 	GL renderer: VideoCore IV HW
+May 23 23:34:12 lvl2: 	GL version:  OpenGL ES-CM 1.1
+May 23 23:34:12 lvl2: 	Checking available OpenGL extensions...
+May 23 23:34:12 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+May 23 23:34:12 lvl2: 	Added known joystick RP2040 NeoGeo Digital (instance ID: 1, device index: 0)
+May 23 23:34:12 lvl2: 	Added known joystick RP2040 NeoGeo Digital (instance ID: 1, device index: 0)
+May 23 23:34:23 lvl2: 	 req sound [basic.launch]
+May 23 23:34:23 lvl2: 	   (missing)
+May 23 23:34:23 lvl2: 	Attempting to launch game...
+May 23 23:34:24 lvl2: 		/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ arcade /home/pi/RetroPie/roms/arcade/puckman.zip
+May 23 23:35:41 lvl2: 	Creating window...
+May 23 23:35:41 lvl2: 	Created window successfully.
+May 23 23:35:41 lvl2: 	GL vendor:   Broadcom
+May 23 23:35:41 lvl2: 	GL renderer: VideoCore IV HW
+May 23 23:35:41 lvl2: 	GL version:  OpenGL ES-CM 1.1
+May 23 23:35:41 lvl2: 	Checking available OpenGL extensions...
+May 23 23:35:41 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+May 23 23:35:41 lvl2: 	Added known joystick RP2040 NeoGeo Digital (instance ID: 2, device index: 0)
+May 23 23:35:41 lvl2: 	Added known joystick RP2040 NeoGeo Digital (instance ID: 2, device index: 0)
+May 23 23:36:02 lvl2: 	 req sound [basic.launch]
+May 23 23:36:02 lvl2: 	   (missing)
+May 23 23:36:03 lvl2: 	Attempting to launch game...
+May 23 23:36:03 lvl2: 		/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ arcade /home/pi/RetroPie/roms/arcade/mslug.zip
+May 23 23:38:06 lvl2: 	Creating window...
+May 23 23:38:06 lvl2: 	Created window successfully.
+May 23 23:38:06 lvl2: 	GL vendor:   Broadcom
+May 23 23:38:06 lvl2: 	GL renderer: VideoCore IV HW
+May 23 23:38:06 lvl2: 	GL version:  OpenGL ES-CM 1.1
+May 23 23:38:06 lvl2: 	Checking available OpenGL extensions...
+May 23 23:38:06 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+May 23 23:38:06 lvl2: 	Added known joystick RP2040 NeoGeo Digital (instance ID: 3, device index: 0)
+May 23 23:38:06 lvl2: 	Added known joystick RP2040 NeoGeo Digital (instance ID: 3, device index: 0)
+May 23 23:42:25 lvl2: 	Added/Updated 3 entities in '/home/pi/.emulationstation/gamelists/arcade/gamelist.xml'
+May 23 23:42:25 lvl2: 	Saved gamelist.xml for system "arcade" in 0 ms
+May 23 23:42:25 lvl2: 	EmulationStation cleanly shutting down.
