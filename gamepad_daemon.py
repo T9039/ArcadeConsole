@@ -5,27 +5,28 @@ from evdev import AbsInfo, UInput, ecodes
 
 capabilities = {
     ecodes.EV_KEY: [
-        ecodes.BTN_SELECT,  # Joystick Click (Coin)
-        ecodes.BTN_START,  # SunFounder (Start)
-        ecodes.BTN_SOUTH,  # G1 (A)
-        ecodes.BTN_EAST,  # G2 (B)
-        ecodes.BTN_NORTH,  # G3 (X)
-        ecodes.BTN_WEST,  # G4 (Y)
+        ecodes.BTN_SELECT,  # Coin
+        ecodes.BTN_START,  # Start
+        ecodes.BTN_SOUTH,  # A
+        ecodes.BTN_EAST,  # B
+        ecodes.BTN_NORTH,  # X
+        ecodes.BTN_WEST,  # Y
     ],
+    # CHANGED: We are now declaring a Digital D-Pad (HAT) instead of an Analog Stick
     ecodes.EV_ABS: [
         (
-            ecodes.ABS_X,
-            AbsInfo(value=32768, min=0, max=65535, fuzz=0, flat=0, resolution=0),
+            ecodes.ABS_HAT0X,
+            AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0),
         ),
         (
-            ecodes.ABS_Y,
-            AbsInfo(value=32768, min=0, max=65535, fuzz=0, flat=0, resolution=0),
+            ecodes.ABS_HAT0Y,
+            AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0),
         ),
     ],
 }
 
 try:
-    gamepad = UInput(capabilities, name="RP2040 NeoGeo Controller", version=0x8)
+    gamepad = UInput(capabilities, name="RP2040 NeoGeo Digital", version=0x9)
     arduino = serial.Serial("/dev/ttyACM0", 115200, timeout=1)
 except Exception as e:
     print(f"Startup Error: {e}")
@@ -39,7 +40,6 @@ try:
             raw_line = arduino.readline().decode("utf-8").strip()
             data = raw_line.split(",")
 
-            # Expecting exactly 8 data points
             if len(data) == 8:
                 try:
                     x_val, y_val = int(data[0]), int(data[1])
@@ -51,9 +51,23 @@ try:
                         int(data[7]),
                     )
 
-                    gamepad.write(ecodes.EV_ABS, ecodes.ABS_X, x_val)
-                    gamepad.write(ecodes.EV_ABS, ecodes.ABS_Y, y_val)
+                    # --- ANALOG TO DIGITAL CONVERSION ---
+                    hat_x, hat_y = 0, 0
+                    if x_val < 15000:
+                        hat_x = -1  # Left
+                    elif x_val > 50000:
+                        hat_x = 1  # Right
 
+                    if y_val < 15000:
+                        hat_y = -1  # Up
+                    elif y_val > 50000:
+                        hat_y = 1  # Down
+
+                    # Send D-Pad Data
+                    gamepad.write(ecodes.EV_ABS, ecodes.ABS_HAT0X, hat_x)
+                    gamepad.write(ecodes.EV_ABS, ecodes.ABS_HAT0Y, hat_y)
+
+                    # Send Button Data
                     gamepad.write(ecodes.EV_KEY, ecodes.BTN_SELECT, sel_b)
                     gamepad.write(ecodes.EV_KEY, ecodes.BTN_START, start_b)
                     gamepad.write(ecodes.EV_KEY, ecodes.BTN_SOUTH, a_b)
