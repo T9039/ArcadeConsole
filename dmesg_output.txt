@@ -1,0 +1,20 @@
+[   18.717339] Adding 102396k swap on /var/swap.  Priority:-2 extents:1 across:102396k FS
+[   19.106387] brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+[   19.318632] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   19.318654] Bluetooth: BNEP filters: protocol multicast
+[   19.318685] Bluetooth: BNEP socket layer initialized
+[   19.747065] SMSC LAN8700 usb-001:003:01: attached PHY driver [SMSC LAN8700] (mii_bus:phy_addr=usb-001:003:01, irq=POLL)
+[   19.747486] smsc95xx 1-1.1:1.0 eth0: hardware isn't capable of remote wakeup
+[   19.763335] smsc95xx 1-1.1:1.0 eth0: Link is Down
+[   21.098797] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   27.299254] ICMPv6: process `dhcpcd' is using deprecated sysctl (syscall) net.ipv6.neigh.wlan0.retrans_time - use net.ipv6.neigh.wlan0.retrans_time_ms instead
+[  185.462249] input: RP2040 NeoGeo Digital as /devices/virtual/input/input1
+[  400.468210] process 'emulators/retroarch/bin/retroarch' started with executable stack
+[  499.757653] usb 1-1.3: USB disconnect, device number 4
+[  559.556523] usb 1-1.4: new low-speed USB device number 7 using dwc_otg
+[  559.713693] usb 1-1.4: New USB device found, idVendor=17ef, idProduct=6099, bcdDevice= 2.02
+[  559.713714] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[  559.713723] usb 1-1.4: Product: Lenovo Traditional USB Keyboard
+[  559.713739] usb 1-1.4: Manufacturer: Lenovo
+[  559.731239] input: Lenovo Lenovo Traditional USB Keyboard as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.4/1-1.4:1.0/0003:17EF:6099.0002/input/input2
+[  559.797258] hid-generic 0003:17EF:6099.0002: input,hidraw0: USB HID v1.10 Keyboard [Lenovo Lenovo Traditional USB Keyboard] on usb-3f980000.usb-1.4/input0
